@@ -1,0 +1,356 @@
+<html>
+    <head>
+       <style>
+      
+           button{
+               height:100px;
+               width:100px;
+               border:2px solid green;
+               background-color:skyblue;
+               border-bottom-right-radius: 10px;
+               border-bottom-left-radius: 10px;
+               border-top-left-radius: 10px;
+               border-top-right-radius: 10px;
+           }
+           table{
+               background-color:white;
+           }
+           button:hover{
+               background-color:lime;
+               border:2px solid blue;
+           }
+           
+       </style> 
+       <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+       <script>
+       var n=0;
+           $(document).ready(function(){
+              $("#row10").click(function(){
+                 if($("#row10").text()!="")
+                 {
+                  var temp;
+                  if($("#row11").text()=="")
+                  {
+                    temp=$("#row10").text();
+                    $("#row10").html($("#row11").text());
+                    $("#row11").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row20").text()=="")
+                  {
+                    temp=$("#row10").text();
+                    $("#row10").html($("#row20").text());
+                    $("#row20").html(temp);
+                  n++;
+
+                  }
+                  
+                  $("#demo").html(n);
+                 } 
+             if($("#row10").text()==1 && $("#row11").text()==2 &&$("#row12").text()==3 && $("#row20").text()==4 &&$("#row21").text()==5 &&$("#row22").text()==6 &&$("#row30").text()==7 &&$("#row31").text()==8 &&$("#row32").text()=="")
+             {
+              $("#win").html("You Won The Game!!!!");
+             }
+              });
+              $("#row11").click(function(){
+                 if($("#row11").text()!="")
+                 {
+                  var temp;
+                  if($("#row10").text()=="")
+                  {
+                    temp=$("#row11").text();
+                    $("#row11").html($("#row10").text());
+                    $("#row10").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row12").text()=="")
+                  {
+                    temp=$("#row11").text();
+                    $("#row11").html($("#row12").text());
+                    $("#row12").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row21").text()=="")
+                  {
+                    temp=$("#row11").text();
+                    $("#row11").html($("#row21").text());
+                    $("#row21").html(temp);
+                  n++;
+
+                  }
+                  $("#demo").html(n);
+                 } 
+                 if($("#row10").text()==1 && $("#row11").text()==2 &&$("#row12").text()==3 && $("#row20").text()==4 &&$("#row21").text()==5 &&$("#row22").text()==6 &&$("#row30").text()==7 &&$("#row31").text()==8 &&$("#row32").text()=="")
+             {
+              $("#win").html("You Won The Game!!!!");
+             }
+             
+              });
+              $("#row12").click(function(){
+                 if($("#row12").text()!="")
+                 {
+                  var temp;
+                  if($("#row11").text()=="")
+                  {
+                    temp=$("#row12").text();
+                    $("#row12").html($("#row11").text());
+                    $("#row11").html(temp);
+
+                  }
+                  else if($("#row22").text()=="")
+                  {
+                    temp=$("#row12").text();
+                    $("#row12").html($("#row22").text());
+                    $("#row22").html(temp);
+
+                  }
+                  n++;
+                  $("#demo").html(n);
+                 } 
+             if($("#row10").text()==1 && $("#row11").text()==2 &&$("#row12").text()==3 && $("#row20").text()==4 &&$("#row21").text()==5 &&$("#row22").text()==6 &&$("#row30").text()==7 &&$("#row31").text()==8 &&$("#row32").text()=="")
+             {
+              $("#win").html("You Won The Game!!!!");
+             }
+              });
+              $("#row20").click(function(){
+                 if($("#row20").text()!="")
+                 {
+                  var temp;
+                  if($("#row10").text()=="")
+                  {
+                    temp=$("#row20").text();
+                    $("#row20").html($("#row10").text());
+                    $("#row10").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row30").text()=="")
+                  {
+                    temp=$("#row20").text();
+                    $("#row20").html($("#row30").text());
+                    $("#row30").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row21").text()=="")
+                  {
+                    temp=$("#row20").text();
+                    $("#row20").html($("#row21").text());
+                    $("#row21").html(temp);
+                  n++;
+
+                  }
+                
+                  $("#demo").html(n);
+                 } 
+                 if($("#row10").text()==1 && $("#row11").text()==2 &&$("#row12").text()==3 && $("#row20").text()==4 &&$("#row21").text()==5 &&$("#row22").text()==6 &&$("#row30").text()==7 &&$("#row31").text()==8 &&$("#row32").text()=="")
+             {
+              $("#win").html("You Won The Game!!!!");
+             }
+             
+              });
+              $("#row21").click(function(){
+                 if($("#row21").text()!="")
+                 {
+                  var temp;
+                  if($("#row11").text()=="")
+                  {
+                    temp=$("#row21").text();
+                    $("#row21").html($("#row11").text());
+                    $("#row11").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row20").text()=="")
+                  {
+                    temp=$("#row21").text();
+                    $("#row21").html($("#row20").text());
+                    $("#row20").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row22").text()=="")
+                  {
+                    temp=$("#row21").text();
+                    $("#row21").html($("#row22").text());
+                    $("#row22").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row31").text()=="")
+                  {
+                    temp=$("#row21").text();
+                    $("#row21").html($("#row31").text());
+                    $("#row31").html(temp);
+                  n++;
+
+                  }
+                
+                  $("#demo").html(n);
+                 } 
+                 if($("#row10").text()==1 && $("#row11").text()==2 &&$("#row12").text()==3 && $("#row20").text()==4 &&$("#row21").text()==5 &&$("#row22").text()==6 &&$("#row30").text()==7 &&$("#row31").text()==8 &&$("#row32").text()=="")
+             {
+              $("#win").html("You Won The Game!!!!");
+             }
+             
+              });
+                 $("#row22").click(function(){
+                 if($("#row22").text()!="")
+                 {
+                  var temp;
+                  if($("#row12").text()=="")
+                  {
+                    temp=$("#row22").text();
+                    $("#row22").html($("#row12").text());
+                    $("#row12").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row21").text()=="")
+                  {
+                    temp=$("#row22").text();
+                    $("#row22").html($("#row21").text());
+                    $("#row21").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row32").text()=="")
+                  {
+                    temp=$("#row22").text();
+                    $("#row22").html($("#row32").text());
+                    $("#row32").html(temp);
+                  n++;
+
+                  }
+                
+                  $("#demo").html(n);
+                 } 
+                 if($("#row10").text()==1 && $("#row11").text()==2 &&$("#row12").text()==3 && $("#row20").text()==4 &&$("#row21").text()==5 &&$("#row22").text()==6 &&$("#row30").text()==7 &&$("#row31").text()==8 &&$("#row32").text()=="")
+             {
+              $("#win").html("You Won The Game!!!!");
+             }
+             
+              });
+               $("#row30").click(function(){
+                 if($("#row30").text()!="")
+                 {
+                  var temp;
+                  if($("#row20").text()=="")
+                  {
+                    temp=$("#row30").text();
+                    $("#row30").html($("#row20").text());
+                    $("#row20").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row31").text()=="")
+                  {
+                    temp=$("#row30").text();
+                    $("#row30").html($("#row31").text());
+                    $("#row31").html(temp);
+                  n++;
+
+                  }
+                
+                  $("#demo").html(n);
+                 } 
+                 if($("#row10").text()==1 && $("#row11").text()==2 &&$("#row12").text()==3 && $("#row20").text()==4 &&$("#row21").text()==5 &&$("#row22").text()==6 &&$("#row30").text()==7 &&$("#row31").text()==8 &&$("#row32").text()=="")
+             {
+              $("#win").html("You Won The Game!!!!");
+             }
+             
+              });
+               $("#row31").click(function(){
+                 if($("#row31").text()!="")
+                 {
+                  var temp;
+                  if($("#row21").text()=="")
+                  {
+                    temp=$("#row31").text();
+                    $("#row31").html($("#row21").text());
+                    $("#row21").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row30").text()=="")
+                  {
+                    temp=$("#row31").text();
+                    $("#row31").html($("#row30").text());
+                    $("#row30").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row32").text()=="")
+                  {
+                    temp=$("#row31").text();
+                    $("#row31").html($("#row32").text());
+                    $("#row32").html(temp);
+                  n++;
+
+                  }
+                  
+                  $("#demo").html(n);
+                 } 
+                 if($("#row10").text()==1 && $("#row11").text()==2 &&$("#row12").text()==3 && $("#row20").text()==4 &&$("#row21").text()==5 &&$("#row22").text()==6 &&$("#row30").text()==7 &&$("#row31").text()==8 &&$("#row32").text()=="")
+             {
+              $("#win").html("You Won The Game!!!!");
+             }
+             
+              });
+               $("#row32").click(function(){
+                 if($("#row32").text()!="")
+                 {
+                  var temp;
+                  if($("#row22").text()=="")
+                  {
+                    temp=$("#row32").text();
+                    $("#row32").html($("#row22").text());
+                    $("#row22").html(temp);
+                  n++;
+
+                  }
+                  else if($("#row31").text()=="")
+                  {
+                    temp=$("#row32").text();
+                    $("#row32").html($("#row31").text());
+                    $("#row31").html(temp);
+                  n++;
+
+                  }
+                  $("#demo").html(n);
+                 } 
+                 if($("#row10").text()==1 && $("#row11").text()==2 &&$("#row12").text()==3 && $("#row20").text()==4 &&$("#row21").text()==5 &&$("#row22").text()==6 &&$("#row30").text()==7 &&$("#row31").text()==8 &&$("#row32").text()=="")
+             {
+              $("#win").html("You Won The Game!!!!");
+             }
+             
+              });
+
+           });
+       </script>
+    </head>
+    <body>
+        <center>
+        <h1>Arrange The Numbers in Sequence Order</h1>
+        <h3>Your moves count:<span id="demo"></span></h3>
+        <table>
+        <tr><td><button id="row10"><b>1</b></button></td>
+        <td><button id="row11"><b>2</b></button></td>
+       <td> <button id="row12">3</button></td></tr>
+        <tr><td><button id="row20">4</button></td>
+        <td><button id="row21">5</button></td>
+        <td><button id="row22">6</button></td></tr>
+        <tr><td><button id="row30">7</button></td>
+        <td><button id="row31"></button></td>
+        <td><button id="row32">8</button></td></tr>
+        </table>
+        
+        <p id="win"></p>
+        </center>
+    </body>
+</html>
