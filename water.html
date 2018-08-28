@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My tank</title>
+<script src="jquery-3.3.1.min.js"></script>
+<style >
+	#switch{
+		background-color: rgb(255, 0, 0);
+		position: absolute;
+		left: 312px;
+		top: 239px;
+		height: 9px;
+		width: 17px;
+		border: 2px solid black;
+	}
+</style>
+<script>
+        $(document).ready(function () {
+            $("#switch").click(function () {
+                $("#fall").fadeToggle();
+                if ($('#switch').css('background-color') == 'rgb(255, 0, 0)') {
+                    $('#switch').css('background-color', 'rgb(0, 255, 0)');
+                    $("#white").slideDown(10000, function () {
+                        $("#fall").css('opacity','0');
+                    });
+                }
+                else {
+                    $('#switch').css('background-color', 'rgb(255, 0, 0)');
+                    $("#white").stop();
+                }
+            });
+        });
+</script>
+</head>
+<body>
+<div id="water" style="
+	background-color: skyblue;
+	height: 250px;
+	width: 200px;
+	border: 2px solid black;
+	position: absolute;
+	top: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	left: 10px;">
+</div>
+<div id="white" style="
+	background-color: white;
+	height: 250px;
+	width: 200px;
+    display: none;
+	border: 2px solid black;
+	position: absolute;
+	top: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	left: 10px;">
+</div>
+<div id="hpipe" style="
+	background-color: brown;
+	height: 10px;
+	width: 100px;
+	border: 2px solid black;
+	position: absolute;
+	top: 245px;
+	left: 213px;">
+</div>
+<div id="vpipe" style="
+	background-color: brown;
+	height: 20px;
+	width: 7px;
+	border: 2px solid black;
+	position: absolute;
+	top: 241px;
+	left: 315px;">
+</div>
+<div id="fall" style="
+	background-color: skyblue;
+	height: 100px;
+	width: 7px;
+	position: absolute;
+	top: 265px;
+	left: 317px;
+	display: none;">
+</div>
+<button id="switch"></button>
+</body>
+</html>
