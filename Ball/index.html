@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+
+</head>
+
+<body >
+
+    <canvas id="myCanvas" height="400" width="500"></canvas>
+    <br>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+
+var x = canvas.width / 2;
+var y = canvas.height/2;
+var ballRadius = 30;
+var dx = 3;
+var dy = 3;
+
+function drawBall() {
+    ctx.beginPath();
+    ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+    ctx.fillStyle ="green";
+    ctx.fill();
+    ctx.closePath();
+}
+
+function draw() {
+    ctx.clearRect(0,0, canvas.width, canvas.height);
+    drawBall();
+    
+    if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
+        dx = -dx;
+
+    }
+    if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
+        dy = -dy;
+    } 
+
+    x += dx;
+    y += dy;
+
+    requestAnimationFrame(draw);
+
+}
+draw();
+
+    </script>
+</body>
+</html
